@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+ int x,x1,x2,x3,x4,y1,y2,y3,y4;
+        scanf("%d", &x);
+
+        x4 = x % 10;
+        x3 = (x/10)%10;
+        x2 = (x/100)%10;
+        x1 = (x/1000)%10;
+        y4 = (x4 + 7)%10;
+        y3 = (x3 + 7)%10;
+        y2 = (x2 + 7)%10;
+        y1 = (x1 + 7)%10;
+
+        printf("%d%d%d%d\n", y3, y4, y1, y2);
+ // put your code here
+  return 0;
+}
+
+/*
+ int main()
+{
+        int x,x1,x2,x3,x4,y1,y2,y3,y4;
+        scanf("%d", &x);
+
+        x4 = x % 10;//1
+        x3 = (x/10)%10;//9
+        x2 = (x/100)%10;//5
+        x1 = (x/1000)%10;//2
+        y4 = (x4 + 3)%10;//4
+        y3 = (x3 + 3)%10;//2
+        y2 = (x2 + 3)%10;//8
+        y1 = (x1 + 3)%10;//5
+
+        printf("%d%d%d%d\n", y3, y4, y1, y2);
+
+        return 0;
+}
