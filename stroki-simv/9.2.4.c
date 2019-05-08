@@ -3,10 +3,10 @@
 
 int main()
 {
-    int n; int sum = 0; int i = 0; int a = 0;
-    char ch[100];
+    int n; int sum = 0; int i = 0;
+    char ch[n];
 
-    fgets(ch, 100, stdin);
+    fgets(ch, n, stdin);
 
     while (ch[i] != '\0') {i++;}        //vsego simv. v stroke
 
