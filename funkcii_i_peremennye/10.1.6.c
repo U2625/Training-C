@@ -4,14 +4,10 @@ int sequence_multilpiers(int x);
 
 int main(void)
 {
-  int n, k;
+  int n;
 
   scanf("%d", &n);
-  k = sequence_multilpiers(n);
-  if (k>0)
-    printf("%d\n", k);
-  else
-    printf("-1\n");
+  printf("%d\n", sequence_multilpiers(n));
 
   return 0;
 }
@@ -24,5 +20,5 @@ int sequence_multilpiers(int x)
     if (i*(i+1)*(i+2) == x)
     return i;
   }
-  return (0);
+  return (-1);
 }
