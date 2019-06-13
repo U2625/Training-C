@@ -10,11 +10,11 @@ int minmax(int arr[], int n, int fl)
     if (arr[i] > max)
         max = arr[i];
   }
-  switch (fl)
-  {
-      case 0:
-          return min; break;
-      case 1:
-          return max; break;
+  switch (fl)			//
+  {				//
+      case 0:			//
+          return min; break;	// return fl ? max : min;
+      case 1:			//
+          return max; break;	//
   }
 }
